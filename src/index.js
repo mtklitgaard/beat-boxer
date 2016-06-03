@@ -35,7 +35,7 @@ Beat.prototype.intentHandlers = {
 function handleBeatRequest(response) {
     var speechOutputForNow = "Yo yo yo, let's drop this beat";
     var cardTitle = "Your Beat";
-    response.tellWithCard(speechOutputForNow, cardTitle);
+    response.tellWithCard(speechOutputForNow, cardTitle, speechOutputForNow);
 }
 
 exports.handler = function(event, context) {
